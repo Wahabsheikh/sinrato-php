@@ -1,0 +1,52 @@
+/* // X-Small devices (portrait phones, less than 576px) */
+/* // No media query for `xs` since this is the default in Bootstrap */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media screen and (max-width: 576px) {
+
+
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+
+
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media screen and (max-width: 992px) {
+
+  #topbar .topbar-left p{
+    display: none;
+}
+
+ 
+
+}
+
+
+
+
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media screen and (max-width: 1200px) {
+    #topbar p{
+        font-size: 12px;
+    }
+    #topbar .topbar-right .w{
+        display: none;
+    }
+    
+
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media screen and (max-width: 1400px) {
+    #topbar p{
+        font-size: 12px;
+    }
+
+    
+}
