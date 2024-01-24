@@ -1,0 +1,187 @@
+:root {
+    --custom-border: #ebebeb;
+    --custom-dark-border: #cfcdcd;
+    --brand-color:#fedc19;
+    --grey:grey;
+    --social-color:#212529;
+    --contact-border:#f0f0f0;
+    --font-color:#777;
+    --primary-font: 'Source Sans Pro', sans-serif;
+    --secondary-font:'Montserrat', sans-serif;
+  }
+.product-wrapper .product-header{
+      font-size: 1.5rem;
+      font-family: var(--primary-font);
+        font-weight: 600;
+        line-height: 1.5;
+  }
+.product-wrapper .page-link{
+    font-weight: 700;
+      color: var(--custom-dark-border);
+      border:1px solid var(--custom-dark-border);
+  }
+
+  .product-wrapper .page-link:hover,
+  .product-wrapper .page-link:focus{
+      border: 1px solid var(--brand-color);
+ background-color: var(--brand-color);
+ color:white;
+}
+
+.product-wrapper .customer-reviews a{
+    color:var(--font-color);
+    font-family:var(--primary-font);
+    text-transform: lowercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.product-wrapper .customer-reviews a:hover,
+.product-wrapper .customer-reviews a:focus
+{
+    color: var(--brand-color);
+
+}
+
+.product-wrapper .goods-price{
+    color: red;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+    line-height: 3;
+}
+
+.product-wrapper .good-discription{
+    font-family:var(--primary-font);
+    color: var(--font-color);
+    margin-bottom: 2rem;
+
+}
+.product-wrapper .qty-btn-control{
+    margin-bottom: 34px;
+}
+.product-wrapper .qty-btn-control input{
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    border:1px solid var(--custom-dark-border);
+    border-radius: 5px;
+    margin-right: 1.5rem;
+}
+.product-wrapper .qty-btn-control button{
+    width: 13rem;
+    height: 3rem;
+    text-align: center;
+    border:1px solid var(--custom-dark-border);
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    text-transform: uppercase;
+    background-color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    font-family: var(--primary-font);
+font-size: 1rem;
+font-weight: 600;
+}
+.product-wrapper .qty-btn-control button:hover,
+.product-wrapper .qty-btn-control button:hover{
+   background-color: var(--social-color);
+   border: 1px solid var(--social-color);
+}
+
+.product-wrapper .add-fav .heart{
+color: var(--font-color);
+text-decoration: none;
+font-weight: 500;
+font-size: 0.9rem;
+font-family: 'Montserrat', sans-serif;
+
+}
+.product-wrapper .add-fav .heart:hover,
+.product-wrapper .add-fav .heart:focus
+{
+    color: var(--brand-color);
+ 
+    }
+.product-wrapper .add-fav .heart::before{
+    
+
+    }
+.product-wrapper .add-fav .compare{
+    color: var(--font-color);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 60px;
+    text-transform: capitalize;
+
+    }
+
+.product-wrapper .add-fav .compare:hover,
+.product-wrapper .add-fav .compare:focus
+{
+color: var(--brand-color);
+}
+
+.product-wrapper .add-fav .compare::before{
+    
+    
+    }
+
+    .product-wrapper .categories-product span{
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+    .product-wrapper .categories-product span a{
+       text-decoration: none;
+       color: var(--font-color);
+       font-weight: bold;
+       font-size: 0.8rem;
+       margin-left: 5px;
+    }
+    .product-wrapper .categories-product span a:hover,
+    .product-wrapper .categories-product span a:focus{
+     color: var(--brand-color);
+         
+     }
+     .product-wrapper .product-shere {
+         margin-top: 30px;
+     }
+     .product-wrapper .product-shere .product-header{
+         font-size: 1rem;
+         font-weight: 600;
+         font-family: 'Montserrat', sans-serif;
+         text-transform: uppercase;
+         
+     }
+     .product-wrapper .product-shere i{
+       color: var(--font-color);
+       margin-left: 20px;
+    }
+    .product-wrapper .product-shere i:hover,
+    .product-wrapper .product-shere i:focus {
+        color: var(--brand-color);
+       
+    
+     }
+     .product-wrapper .header{
+         background-color: var(--custom-border);
+         padding: 20px ;
+       margin-bottom: 30px;
+     }
+   
+     .product-wrapper .header a {
+        color: var(--font-color);
+        text-transform: uppercase;
+        font-size: 1.3rem; 
+        font-weight: bold;
+        text-decoration: none;
+        margin-left: 70px;
+
+    }
+    .product-wrapper .header a:active{
+        color: var(--social-color);
+    }
+    .product-wrapper .header a:hover,
+    .product-wrapper .header a:focus{
+        color: var(--social-color);
+    }

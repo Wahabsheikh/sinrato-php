@@ -11,7 +11,7 @@
                 </div>
                 <div class="topbar-right col-12 col-lg-6">
                     <div class=" d-flex justify-content-center justify-content-lg-end ">
-                        <a href="">My account</a>
+                        <a href="<?php echo BASE_URL; ?>/pages/myaccount.php">My account</a>
                         <span class="mx-3 py-1 grey">|</span>
                         <a href="">Checkout</a>
                     </div>
@@ -28,7 +28,8 @@
                 <div
                     class="col-lg-2 col-md-12 align-items-center d-flex  justify-content-md-center justify-content-end">
                     <figure>
-                        <img src="<?php echo BASE_URL?>/assets/images/logo_sinrato (1).png" style="width: 180px; height: 40px;" alt="logo">
+                        <img src="<?php echo BASE_URL ?>/assets/images/logo_sinrato (1).png"
+                            style="width: 180px; height: 40px;" alt="logo">
                     </figure>
                 </div>
                 <div class="col-lg-7 col-md-12 d-flex justify-content-md-center justify-content-lg-start">
@@ -84,14 +85,16 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>/pages/shop.php">Shop</a>
+                    <a class="nav-link active" aria-current="page"
+                        href="<?php echo BASE_URL; ?>/pages/shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page"
-                        href="<?php echo BASE_URL;?>/pages/about.php">About</a>
+                        href="<?php echo BASE_URL; ?>/pages/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL;?>/pages/contact.php">Contact</a>
+                    <a class="nav-link active" aria-current="page"
+                        href="<?php echo BASE_URL; ?>/pages/contact.php">Contact</a>
                 </li>
 
             </ul>

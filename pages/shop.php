@@ -1,9 +1,12 @@
-<?php include "../data/products.php"; ?>
+<?php
+include "../data/products.php";
+?>
 
 
 <?php include "../layout/header.php"; ?>
 
 </head>
+
 <body>
   <?php include "../layout/menu.php"; ?>
 
@@ -154,465 +157,47 @@
             <div class="row">
               <div class="collapse d-flex" id="product-item-1">
                 <div class="row">
-                <?php foreach ($products as $key => $value) {  ?>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="<?php echo BASE_URL.'/'.$value['image']; ?>" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase"><?php echo $value['name']; ?></a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="./product.html/product.html" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
+                  <?php foreach ($products as $key => $value) { ?>
+                    <div class="col-4">
+                      <div class="card mb-4">
+                        <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                          <h6 class="card-title">
+                            <a href="" class="text-uppercase">
+                              <?php echo $value['name']; ?>
+                            </a>
+                          </h6>
+                          <p class="my-2">
+                            <a href="<?php echo BASE_URL; ?>/pages/productdetails.php" class="d-block">Phasellus vel
+                              handererit egit
+                              Pretium
+                            </a>
+                          </p>
+                          <div class="stars-rating">
+                            <ul class="stars list-unstyled d-flex mt-">
+                              <li class="star">
+                                <i class="fas fa-sm fa-star"></i>
+                              </li>
+                              <li class="star">
+                                <i class="fas fa-sm fa-star"></i>
+                              </li>
+                              <li class="star">
+                                <i class="fas fa-sm fa-star"></i>
+                              </li>
+                              <li class="star">
+                                <i class="fas fa-sm fa-star"></i>
+                              </li>
+                              <li class="star me-3">
+                                <i class="fas fa-sm fa-star"></i>
+                              </li>
+                              <span><a href="">(1 Reviews)</a></span>
+                            </ul>
+                          </div>
+                          <span class="h5">$55.00</span>
                         </div>
-                        <span class="h5">$55.00</span>
                       </div>
                     </div>
-                  </div>
                   <?php } ?>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/2.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4 mb-4">
-                    <div class="card">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/4.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/4.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/1.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/2.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h6 class="card-title">
-                          <a href="" class="text-uppercase">Consoles</a>
-                        </h6>
-                        <p class="my-2">
-                          <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                          </a>
-                        </p>
-                        <div class="stars-rating">
-                          <ul class="stars list-unstyled d-flex mt-">
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <li class="star me-3">
-                              <i class="fas fa-sm fa-star"></i>
-                            </li>
-                            <span><a href="">(1 Reviews)</a></span>
-                          </ul>
-                        </div>
-                        <span class="h5">$55.00</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination">
-                          <li class="page-item disabled">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                          <li class="page-item active">
-                            <a class="page-link" href="./shop.html">1</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">2</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="#">3</a>
-                          </li>
-                          <li class="page-item">
-                            <a class="page-link" href="./shop2.html" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="collapse" id="collapseExample-1 ">
-                <div class="row">
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/1.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/2.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4 mb-4">
-                    <div class="card">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/4.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/4.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/1.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/2.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-4">
-                    <div class="card mb-4">
-                      <img src="./assets/images/products/3.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                        <h5 class="card-title text-muted">Console</h5>
-                        <a href="" class="d-block">Phasellus vel handererit egit Pretium
-                        </a>
-                        <span class="text-muted">(1 Reviews)</span>
-                        <h6>$55.00</h6>
-                      </div>
-                    </div>
-                  </div>
                   <div class="row">
                     <div class="col-12 d-flex justify-content-center">
                       <nav aria-label="Page navigation example">
@@ -648,6 +233,4 @@
       </div>
     </div>
   </section>
-
-  <section id="contact" class="contact"></section>
-  <?php include "./layout/footer.php"; ?>
+  <?php include "../layout/footer.php" ?>

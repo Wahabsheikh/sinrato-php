@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecomm</title>
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL . B ?>">
 
-    <link rel="stylesheet" href="./assets/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/all.min.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL . AMCSS ?>">
 
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL . MAIN_CSS ?>">
 
-    <link rel="stylesheet" href="./assets/css/responsive.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="<?php echo BASE_URL . RESP_CSS ?>">
 
-    <link rel="stylesheet" href="./assets/css/blogs.css" />
-    <!-- <link rel="stylesheet" href="./assets/css/navbar.css"> -->
+    <link rel="stylesheet" href="<?php echo BASE_URL . BLOG_CSS ?>">
+
+    <link rel="stylesheet" href="<?php echo BASE_URL . NAV_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . PROD_CSS ?>">
+
+
 
     <!-- google Font -->
 
