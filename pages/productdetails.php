@@ -128,7 +128,7 @@
             </div>
         </div>
     </section>
-
+    <!-- 
     <section id="related-product">
         <div class="container">
             <div class="row">
@@ -645,49 +645,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="contact mt-5">
-        <div class="container-fluid ">
-            <div class="container">
-                <div class="row d-flex align-items-center" style="height: 10rem;">
-                    <div class="col-4 ">
-                        <div>
-                            <h5 class="mb-0 mt-2">
-                                Sign Up For Newsletters
-                            </h5>
-                            <p class="small text-muted">
-                                Be the First to Know. Sign up for newsletter today
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-5 d-flex justify-content-end  ">
-                        <div class="input-group">
-                            <input type="text" class="form-control border-0 " placeholder="Enter Your E-mail Address"
-                                aria-label="Input group example" aria-describedby="btnGroupAddon">
-                            <button type="button" class="btn btn-sm-yellow">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class=" social-icon col-3 d-flex  ">
-                        <a href="">
-                            <i class="fab fa-facebook-f fa-1x"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-twitter fa-1x"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-instagram fa-1x"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-linkedin-in fa-1x"></i>
-                        </a>
-                        <a href="">
-                            <i class="fas fa-rss fa-1x"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section> -->
 
     <?php include "../layout/footer.php"; ?>

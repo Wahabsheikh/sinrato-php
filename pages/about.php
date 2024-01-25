@@ -1,3 +1,7 @@
+<?php include "../data/ouraboutservices.php"; ?>
+<?php include "../data/ouraboutbannercontent.php"; ?>
+<?php include "../data/ouraboutpolicy.php"; ?>
+
 
 <?php include "../layout/header.php"; ?>
 </head>
@@ -10,38 +14,36 @@
     <section class="about-us">
         <div class="container">
             <div class="row">
+
                 <div class="col-12 my-5">
                     <h1 class="text-center m-3 fw-bold">About Us</h1>
                 </div>
-                <div class="col-12 mb-5">
-                    <figure>
-                        <img src="./assets/images/banners/about-us-banner1-1395x709.jpg" alt="">
-                    </figure>
-                </div>
-                <div class="col-12 d-flex justify-content-center mb-5">
-                    <h1 class="text-center w-75">
-                        We are a digital agency focused on delivering content and utility user-experiences.
-                    </h1>
+                <?php foreach ($our_about_content as $key => $value) { ?>
+                    <div class="col-12 mb-5">
+                        <figure>
+                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="">
+                        </figure>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mb-5">
+                        <h1 class="text-center w-75">
+                            <?php echo $value['title']; ?>
+                        </h1>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center mb-5">
+                        <p class="small text-center text-muted w-75">
 
-                </div>
-                <div class="col-12 d-flex justify-content-center mb-5">
-                    <p class="small text-center text-muted w-75">
-                        Adipiscing lacus ut elementum, nec duis, tempor litora turpis dapibus. Imperdiet cursus odio
-                        tortor in elementum. Egestas nunc eleifend feugiat lectus laoreet, vel nunc taciti integer cras.
-                        Hac pede dis, praesent nibh ac dui mauris sit. Pellentesque mi, facilisi mauris, elit sociis leo
-                        sodales accumsan. Iaculis ac fringilla torquent lorem consectetuer, sociosqu phasellus risus
-                        urna aliquam, ornare.
-                    </p>
+                            <?php echo $value['description']; ?>
+                        </p>
+                    </div>
+                    <div class="col-12 d-flex justify-content-center  mb-5">
 
+                        <figure>
+                            <img src="<?php echo BASE_URL . '/' . $value['sigImage']; ?>" alt="">
+                        </figure>
 
-                </div>
-                <div class="col-12 d-flex justify-content-center  mb-5">
+                    </div>
+                <?php } ?>
 
-                    <figure>
-                        <img src="./assets/images/banners/about-us-signature.png" alt="">
-                    </figure>
-
-                </div>
             </div>
 
 
@@ -49,92 +51,42 @@
         <div class="container-fluid mb-5">
             <div class="row  d-flex align-items-center" style="height: 20rem;">
                 <div class="col-12 position-absolute">
-
                     <figure>
-                        <img src="./assets/images/banners/about-us-policy-bg.jpg" alt="" class=>
+                        <img class="about-services-background" src="../assets/images/banners/about-us-policy-bg.jpg"
+                            alt="">
                     </figure>
-
-
-
-
                 </div>
-
-                <div class="col-4 text-center" style="z-index: 1;">
-                    <figure>
-                        <img src="./assets/images/icons/about-us-policy1.png" alt="">
-                    </figure>
-                    <h6>
-                        Creative Design
-                    </h6>
-                    <p>
-                        Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet
-                        enim
-                    </p>
-                </div>
-                <div class="col-4 text-center" style="z-index: 1;">
-                    <figure>
-                        <img src="./assets/images/icons/about-us-policy2.png" alt="">
-                    </figure>
-                    <h6>
-                        100% Money Back Guarantee
-                    </h6>
-                    <p>
-                        Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet
-                        enim
-                    </p>
-                </div>
-                <div class="col-4 text-center" style="z-index: 1;">
-                    <figure>
-                        <img src="./assets/images/icons/about-us-policy3.png" alt="">
-                    </figure>
-                    <h6>
-                        Online Support 24/7
-                    </h6>
-                    <p>
-                        Erat metus sodales eget dolor consectetuer, porta ut purus at et alias, nulla ornare velit amet
-                        enim
-                    </p>
-                </div>
+                <?php foreach ($our_about_services as $key => $value) { ?>
+                    <div class="col-4 text-center" style="z-index: 1;">
+                        <figure>
+                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="">
+                        </figure>
+                        <h6>
+                            <?php echo $value['title']; ?>
+                        </h6>
+                        <p>
+                            <?php echo $value['description']; ?>
+                        </p>
+                    </div>
+                <?php } ?>
             </div>
         </div>
         <div class="container mb-5">
             <div class="row">
-                <div class="col-4 text-start">
-                    <figure>
-                        <img src="./assets/images/banners/about-us-banner2-1.jpg" class="img-fluid" alt="">
-                    </figure>
-                    <h6 class="fw-bold">
-                        What do we do?
-                    </h6>
-                    <p class="small text-muted">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    </p>
-                </div>
-                <div class="col-4 text-start">
-                    <figure>
-                        <img src="./assets/images/banners/about-us-banner2-2.jpg" class="img-fluid" alt="">
-                    </figure>
-                    <h6 class="fw-bold">
-                        Our Mission
-                    </h6>
-                    <p class="small text-muted">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    </p>
-                </div>
-                <div class="col-4 text-start">
-                    <figure>
-                        <img src="./assets/images/banners/about-us-banner2-3.jpg" class="img-fluid" alt="">
-                    </figure>
-                    <h6 class="fw-bold">
-                        History Of Us
-                    </h6>
-                    <p class="small text-muted">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                        laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
-                    </p>
-                </div>
+                <?php foreach ($our_about_policy as $key => $value) { ?>
+
+                    <div class="col-4 text-start">
+                        <figure>
+                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" class="img-fluid" alt="">
+                        </figure>
+                        <h6 class=" fw-bold">
+                            <?php echo $value['title']; ?>
+                        </h6>
+                        <p class="small text-muted">
+                            <?php echo $value['description']; ?>
+                        </p>
+                    </div>
+                <?php } ?>
             </div>
         </div>
         <div class="container mb-5">
@@ -206,20 +158,9 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-6 text-start">
-
-                    <h4>
-                        What Our Customers Says ?
-                    </h4>
-                    <div class="border">
-
-                    </div>
-                </div> -->
-
             </div>
         </div>
     </section>
-
 
     <section id="contact" class="contact"></section>
     <?php include "../layout/footer.php"; ?>

@@ -13,7 +13,7 @@
                     <div class=" d-flex justify-content-center justify-content-lg-end ">
                         <a href="<?php echo BASE_URL; ?>/pages/myaccount.php">My account</a>
                         <span class="mx-3 py-1 grey">|</span>
-                        <a href="">Checkout</a>
+                        <a href="<?php echo BASE_URL; ?>/pages/cart.php">Checkout</a>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,8 @@
                             </svg>
                             <div class="mx-2 d-flex flex-column align-items-start">
                                 <span class="badge rounded-pill bg-custom-yellow ">0</span>
-                                <p><a class="text-decoration-none " href="" style="  font-size: 13px;"> My Cart</a>
+                                <p><a class="text-decoration-none " href="<?php echo BASE_URL; ?>/pages/cart.php"
+                                        style="  font-size: 13px;"> My Cart</a>
                                 </p>
                             </div>
                         </div>

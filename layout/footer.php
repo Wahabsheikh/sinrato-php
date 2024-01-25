@@ -1,3 +1,45 @@
+<section class="contact mt-5">
+    <div class="container-fluid ">
+        <div class="container">
+            <div class="row d-flex align-items-center" style="height: 10rem;">
+                <div class="col-4 ">
+                    <div>
+                        <h5 class="mb-0 mt-2">
+                            Sign Up For Newsletters
+                        </h5>
+                        <p class="small text-muted">
+                            Be the First to Know. Sign up for newsletter today
+                        </p>
+                    </div>
+                </div>
+                <div class="col-5 d-flex justify-content-end  ">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-0 " placeholder="Enter Your E-mail Address"
+                            aria-label="Input group example" aria-describedby="btnGroupAddon">
+                        <button type="button" class="btn btn-sm-yellow">Subscribe</button>
+                    </div>
+                </div>
+                <div class=" social-icon col-3 d-flex  ">
+                    <a href="">
+                        <i class="fab fa-facebook-f fa-1x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-twitter fa-1x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-instagram fa-1x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fab fa-linkedin-in fa-1x"></i>
+                    </a>
+                    <a href="">
+                        <i class="fas fa-rss fa-1x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <footer id="footer">
     <div class="container-fluid d-flex flex-wrap">
         <div class="my-container">
@@ -54,13 +96,12 @@
         </div>
     </div>
 </footer>
-<script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/jsbs/js/bootstrap.bundle.min.js"></script>
+<script src="<?php echo BASE_URL . J_QUERY_MIN_JS ?>"></script>
+<script src="<?php echo BASE_URL . O_CAROUSEL_MIN_JS ?>"></script>
+<script src="<?php echo BASE_URL . B_MIN_JS ?>"></script>
 <script src="https://kit.fontawesome.com/1d478d290c.js" crossorigin="anonymous"></script>
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets//components/data.js"></script>
-<script src="./assets/js/main.js"></script>
+<script src="<?php echo BASE_URL . PLUGINS_JS ?>"></script>
+
 
 </body>
 

@@ -1,9 +1,15 @@
+<!-- ---------------------WEBSITE BASE LINk ------------------------------->
+
 <?php
 define('BASE_URL', 'http://localhost/sinrato'); ?>
+
+<!-------------------------- WEBSITE LOGO IMAGE LINK ------------------------>
 
 <?php
 define('LOGO_PATH', './assets/images/logo_sinrato (1).png');
 ?>
+
+<!----------------------------- EVERY STYLES CSS BUNDLES LINK ------------------------------------>
 <?php
 define('B', './assets/css/bootstrap.css')
     ?>
@@ -26,13 +32,26 @@ define('NAV_CSS', './assets/css/navbar.css');
 define('PROD_CSS', './assets/css/product.css');
 ?>
 <?php
-// define('PROD_CSS', './assets/css/product.css');
+define('OWL_CAROUSEL_MIN_CSS', './assets/css/owl.carousel.min.css');
+
+?>
+<?php
+define('OWL_THEME_GREEN_MIN_CSS', './assets/css/owl.theme.green.min.css');
+
 ?>
 
-<!-- <script src="./assets/js/jquery.min.js"></script>
-<script src="./assets/js/owl.carousel.min.js"></script>
-<script src="./assets/jsbs/js/bootstrap.bundle.min.js"></script>
-<script src="https://kit.fontawesome.com/1d478d290c.js" crossorigin="anonymous"></script>
-<script src="./assets/js/plugins.js"></script>
-<script src="./assets//components/data.js"></script>
-<script src="./assets/js/main.js"></script> -->
+
+<!------------------------------- EVERY JS FILE BUNDLES  ------------------------------------>
+
+<?php
+define('B_MIN_JS', './assets/jsbs/js/bootstrap.bundle.min.js');
+?>
+<?php
+define('J_QUERY_MIN_JS', './assets/js/jquery.min.js');
+?>
+<?php
+define('O_CAROUSEL_MIN_JS', './assets/js/owl.carousel.min.js');
+?>
+<?php
+define('PLUGINS_JS', './assets/js/plugins.js');
+?>

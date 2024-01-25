@@ -657,8 +657,9 @@ footer .information ul a {
   font-weight: bold;
   color: var(--social-color);
 }
-
-.about-us .accordion-body {
+/* .about-us .about-services-background {
+} */
+.about-us.about-us .accordion-body {
   font-size: 0.9rem;
   line-height: 1.7;
   font-family: "Work Sans", sans-serif;

@@ -1,6 +1,12 @@
 <?php
 include "./data/products.php";
 ?>
+<?php
+include "./data/ourfasilities.php";
+?>
+<?php
+include "./data/addsimagebanner.php";
+?>
 <?php include "./data/categories.php"; ?>
 <?php include "./data/banner.php"; ?>
 <?php include "./layout/header.php"; ?>
@@ -19,17 +25,37 @@ include "./data/products.php";
             <div class="my-container">
                 <div class="row ">
                     <div class="col-12">
+
                         <div class="carousel slide carousel-fade position-sticky" id="demo" data-bs-ride="carousel">
 
                             <div class="carousel-indicators  ">
                                 <button type="button" class="active" data-bs-target="#demo"
                                     data-bs-slide-to="0"></button>
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+
+
                             </div>
 
+
                             <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="./assets/images/slider/3.jpg" alt="" class="d-block w-100">
+                                    <div class="head position-absolute  ">
+                                        <h1>
+                                            New Rang Of <br> Samsung Camera
+                                        </h1>
+                                        <p class="text-muted">Samsung E-4-40 / CX-100></p>
+
+                                        <a href="#" class="btn btn-img ">Shop Now</a>
+                                    </div>
+                                </div>
                                 <?php foreach ($banners as $key => $value) { ?>
-                                    <div class="carousel-item active">
+
+                                    <div class="carousel-item ">
                                         <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt=""
                                             class="d-block w-100">
                                         <div class="head position-absolute  ">
@@ -46,6 +72,7 @@ include "./data/products.php";
                                 <?php } ?>
                             </div>
 
+
                             <button type="button" class="carousel-control-prev" data-bs-target="#demo"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon "></span>
@@ -54,6 +81,9 @@ include "./data/products.php";
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon "></span>
                             </button>
+
+
+
                         </div>
 
                     </div>
@@ -65,70 +95,24 @@ include "./data/products.php";
     <section class="fasilities">
         <div class="container-fluid">
             <hr>
-            <div class="container">
-                <div class="row my-5">
-                    <div class=" offer  col md-6 ms-2 ">
+            <div class="row my-5">
+                <?php foreach ($our_fasilities as $key => $value) { ?>
+                    <div class=" offer  col-3 ms-2 ">
                         <div class="items d-flex ">
-                            <img src="./assets/images/icons/policy1.png" alt="icon">
-
+                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="icon">
                             <div class="card-body ">
-                                <h6 class="card-title">Free Shipping</h6>
-                                <span class="card-text"> <small class="muted"> Free shipping on all US order
+                                <h6 class="card-title">
+                                    <?php echo $value['title']; ?>
+                                </h6>
+                                <span class="card-text"> <small class="muted">
+                                        <?php echo $value['discription']; ?>
                                     </small>
                                 </span>
-                            </div>
-                        </div>
-
-
-
-                        <div class="items d-flex ">
-                            <img src="./assets/images/icons/policy2.png" alt="icon">
-
-                            <div class="card-body ">
-                                <h6 class="card-title">Free Shipping</h6>
-                                <span class="card-text"> <small class="muted"> Free shipping on all US order
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="items d-flex ">
-                            <img src="./assets/images/icons/policy3.png" alt="icon">
-
-                            <div class="card-body ">
-                                <h6 class="card-title">Free Shipping</h6>
-                                <span class="card-text"> <small class="muted"> Free shipping on all US order
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class=" offer  col md-6 ms-2 ">
-                        <div class="v-line ">
-                            <div class="items d-flex ">
-                                <img src="./assets/images/icons/policy4.png" alt="icon">
-                                <div class="card-body ">
-                                    <h6 class="card-title">Free Shipping</h6>
-                                    <span class="card-text"> <small class="muted"> Free shipping on all US order
-                                        </small>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="v-line">
-                            <div class="items d-flex ">
-                                <img src="./assets/images/icons/policy5.png" alt="icon">
-                                <div class="card-body ">
-                                    <h6 class="card-title">Free Shipping</h6>
-                                    <span class="card-text"> <small class="muted"> Free shipping on all US order
-                                        </small>
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?php } ?>
+
             </div>
             <hr>
         </div>
@@ -201,19 +185,11 @@ include "./data/products.php";
         <div class="container-fluid mt-5 ">
             <div class="my-container">
                 <div class=" banner row d-flex justify-content-evenly">
-                    <div class="col-md-4 ">
-                        <img src="./assets/images/banners/home1-banner1-1.jpg" alt="">
-
-                    </div>
-                    <div class="col-md-4 ">
-                        <img src="./assets/images/banners/home1-banner1-2.jpg" alt="">
-
-                    </div>
-                    <div class="col-md-4 ">
-                        <img src="./assets/images/banners/home1-banner1-3.jpg" alt="">
-
-                    </div>
-
+                    <?php foreach ($adds_image_banners as $key => $value) { ?>
+                        <div class="col-md-4 ">
+                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="">
+                        </div>
+                    <?php } ?>
                 </div>
             </div>
         </div>
