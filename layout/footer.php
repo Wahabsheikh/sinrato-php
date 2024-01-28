@@ -66,14 +66,16 @@
                 <div class=" information col-2 mt-5">
                     <h5>Information</h5>
                     <ul class="list-group">
-                        <a href="#" class=" list-group-item-action"> Home Page</a>
-                        <a href="#" class=" list-group-item-action">Cart </a>
-                        <a href="#" class=" list-group-item-action">About Us</a>
-                        <a href="#" class=" list-group-item-action">Contact </a>
-                        <a href="#" class=" list-group-item-action">Wishlist </a>
-                        <a href="#" class=" list-group-item-action"> Privacy Policy</a>
-                        <a href="#" class=" list-group-item-action">Sample Page </a>
-                    </ul>
+                        <?php foreach ($buttons as $key => $value) {
+                            if ($value['information']) {
+                                ?>
+                                <a href="<?php echo BASE_URL . '/' . $value['button']; ?>" class=" list-group-item-action">
+                                    <?php echo $value['name']; ?>
+                                </a>
+
+                            <?php }
+                        } ?>
+
                 </div>
                 <div class="col-3 mt-5">
                     <h5>

@@ -9,6 +9,7 @@ $products = [
         'description' => 'This is the description for Product A.',
         'image' => 'assets/images/products/1.png',
         'category_id' => 1,
+        'popularproduct' => false
 
     ],
     [
@@ -18,6 +19,7 @@ $products = [
         'description' => 'Description for Product B goes here.',
         'image' => 'assets/images/products/2.png',
         'category_id' => 5,
+        'popularproduct' => true
 
     ],
     [
@@ -27,6 +29,7 @@ $products = [
         'description' => 'Product C is a great choice for your needs.',
         'image' => 'assets/images/products/3.png',
         'category_id' => 3,
+        'popularproduct' => false
 
     ],
     [
@@ -36,6 +39,7 @@ $products = [
         'description' => 'Description for Product D.',
         'image' => 'assets/images/products/4.png',
         'category_id' => 4,
+        'popularproduct' => true
 
     ],
     [
@@ -45,6 +49,7 @@ $products = [
         'description' => 'This is the description for Product E.',
         'image' => 'assets/images/products/5.png',
         'category_id' => 2,
+        'popularproduct' => false
 
     ],
     [
@@ -54,6 +59,7 @@ $products = [
         'description' => 'Description for Product F.',
         'image' => 'assets/images/products/6.png',
         'category_id' => 6,
+        'popularproduct' => true
 
     ],
     [
@@ -62,7 +68,8 @@ $products = [
         'price' => 79.99,
         'description' => 'Product G is a popular choice.',
         'image' => 'assets/images/products/7.png',
-        'category_id' => 7
+        'category_id' => 7,
+        'popularproduct' => false
 
     ],
     [
@@ -72,6 +79,7 @@ $products = [
         'description' => 'Description for Product H.',
         'image' => 'assets/images/products/8.png',
         'category_id' => 8,
+        'popularproduct' => true
 
     ],
     [
@@ -81,6 +89,7 @@ $products = [
         'description' => 'This is the description for Product I.',
         'image' => 'assets/images/products/9.png',
         'category_id' => 9,
+        'popularproduct' => false
 
     ],
     [
@@ -90,6 +99,7 @@ $products = [
         'description' => 'Product J is a high-quality option.',
         'image' => 'assets/images/products/10.png',
         'category_id' => 10,
+        'popularproduct' => true
 
     ],
 

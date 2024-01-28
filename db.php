@@ -13,6 +13,8 @@ include "./data/banner.php";
 include "./data/ouraboutbannercontent.php";
 include "./data/ouraboutpolicy.php";
 include "./data/ouraboutservices.php";
+include "./data/buttons.php";
+
 
 
 

@@ -1,17 +1,6 @@
 <?php include "./layout/header.php";
 $data = $products;
-//Filter Category Products
-// if (isset($_GET['category_id'])) {
-//     $filterproducts = [];
-//     $category_id = $_GET['category_id'];
-//     foreach ($data as $key => $value) {
-//         if ($value['category_id'] == $category_id) {
 
-//             array_push($filterproducts, $value);
-//         }
-//     }
-//     $data = $filterproducts;
-// }
 ?>
 <style>
     .selector-for-some-widget {
@@ -50,8 +39,7 @@ $data = $products;
                                         </h1>
                                         <p class="text-muted">Samsung E-4-40 / CX-100></p>
 
-                                        <a href="<?php echo BASE_URL . '/shop.php?category_id=' ?>"
-                                            class="btn btn-img ">Shop Now</a>
+                                        <a href="<?php echo BASE_URL . '/shop.php' ?>" class="btn btn-img ">Shop Now</a>
 
                                     </div>
                                     <div class="figure">
@@ -101,7 +89,6 @@ $data = $products;
     </section>
     <section class="fasilities">
         <div class="container-fluid">
-
             <div class="row ">
                 <div class="col-12 ">
                     <div class="owl-carousel ">
@@ -143,26 +130,29 @@ $data = $products;
             <div class="row">
                 <div class="col-12">
                     <div class="owl-carousel owl-theme ">
-                        <?php foreach ($products as $key => $value) { ?>
-                            <div class="item">
-                                <div class="card ">
-                                    <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="...">
-                                    <div class="card-body ">
-                                        <h6 class="card-title"><a
-                                                href="<?php echo BASE_URL . '/productdetails.php?id=' . $value['id']; ?>"
-                                                class="text-uppercase">
-                                                <?php echo $value['name']; ?>
-                                            </a></h6>
-                                        <p class="my-2"><a href="" class="d-block ">
-                                                <?php echo $value['description']; ?>
-                                            </a></p>
-                                        <span class="h5">
-                                            <?php echo $value['price']; ?>
-                                        </span>
+                        <?php foreach ($products as $key => $value) {
+                            if ($value['popularproduct']) {
+                                ?>
+                                <div class="item">
+                                    <div class="card ">
+                                        <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="...">
+                                        <div class="card-body ">
+                                            <h6 class="card-title"><a
+                                                    href="<?php echo BASE_URL . '/productdetails.php?id=' . $value['id']; ?>"
+                                                    class="text-uppercase">
+                                                    <?php echo $value['name']; ?>
+                                                </a></h6>
+                                            <p class="my-2"><a href="" class="d-block ">
+                                                    <?php echo $value['description']; ?>
+                                                </a></p>
+                                            <span class="h5">
+                                                <?php echo $value['price']; ?>
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        <?php } ?>
+                            <?php }
+                        } ?>
                     </div>
                 </div>
             </div>
