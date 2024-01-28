@@ -14,7 +14,7 @@ $adds_image_banners = [
     ],
     [
         'id' => 4,
-        'image' => './assets/images/banners/home1-banner1-3.jpg'
+        'image' => './assets/images/banners/home1-banner1-1.jpg'
     ]
 
 ] ?>

@@ -1,14 +1,9 @@
-<?php include "../data/ouraboutservices.php"; ?>
-<?php include "../data/ouraboutbannercontent.php"; ?>
-<?php include "../data/ouraboutpolicy.php"; ?>
-
-
-<?php include "../layout/header.php"; ?>
+<?php include "./layout/header.php"; ?>
 </head>
 
 <body>
 
-    <?php include "../layout/menu.php"; ?>
+    <?php include "./layout/menu.php"; ?>
 
 
     <section class="about-us">
@@ -162,5 +157,5 @@
         </div>
     </section>
 
-    <section id="contact" class="contact"></section>
-    <?php include "../layout/footer.php"; ?>
+
+    <?php include "./layout/footer.php"; ?>

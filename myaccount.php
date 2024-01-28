@@ -1,8 +1,8 @@
-<?php include "../layout/header.php"; ?>
+<?php include "./layout/header.php"; ?>
 </head>
 
 <body>
-    <?php include "../layout/menu.php"; ?>
+    <?php include "./layout/menu.php"; ?>
     <section class="contact-form mt-5">
         <div class="container-fluid">
             <div class="container">
@@ -71,4 +71,4 @@
     </section>
 
 
-    <?php include "../layout/footer.php"; ?>
+    <?php include "./layout/footer.php"; ?>

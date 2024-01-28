@@ -1,8 +1,8 @@
-<?php include "../layout/header.php"; ?>
+<?php include "./layout/header.php"; ?>
 </head>
 
 <body>
-    <?php include "../layout/menu.php"; ?>
+    <?php include "./layout/menu.php"; ?>
 
     <section id="cart">
         <div class="container">
@@ -75,4 +75,4 @@
 
 
 
-    <?php include "../layout/footer.php"; ?>
+    <?php include "./layout/footer.php"; ?>

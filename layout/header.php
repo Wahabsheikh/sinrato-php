@@ -1,4 +1,9 @@
-<?php include 'constant.php' ?>
+<?php
+
+include 'constant.php';
+include "./db.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,22 +12,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecomm</title>
-    <link rel="stylesheet" href="<?php echo BASE_URL . B ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/bootstrap.css' ?>">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . AMCSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/all.min.css' ?>">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . MAIN_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/main.css' ?>">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . RESP_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/responsive.css' ?>">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . BLOG_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/blogs.css' ?>">
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . NAV_CSS ?>">
-    <link rel="stylesheet" href="<?php echo BASE_URL . PROD_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/navbar.css' ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/product.css' ?>">
 
 
-    <link rel="stylesheet" href="<?php echo BASE_URL . OWL_CAROUSEL_MIN_CSS ?>">
-    <link rel="stylesheet" href="<?php echo BASE_URL . OWL_THEME_GREEN_MIN_CSS ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/owl.carousel.min.css' ?>">
+    <link rel="stylesheet" href="<?php echo BASE_URL . './assets/css/owl.theme.green.min.css' ?>">
 
 
     <!-- google Font -->

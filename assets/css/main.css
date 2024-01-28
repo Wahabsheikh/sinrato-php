@@ -18,6 +18,21 @@ body {
   max-width: 1280px;
   margin: auto;
 }
+/* header decoration section start */
+.headers-decoration {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.headers-decoration .row {
+  display: flex;
+  align-items: center;
+}
+.headers-decoration .hr {
+  border: 1px solid var(--grey);
+  width: 100%;
+}
+
+/* header decoration section end */
 
 /* (1)Top Bar */
 
@@ -71,40 +86,6 @@ body {
 
 /*(2) menu-bar */
 
-/* search panel */
-.panel .left {
-  background-color: var(--contact-border);
-  border: 1px solid var(--contact-border);
-  font-weight: 400;
-  padding: 5px 20px;
-}
-
-.panel .left:hover {
-  background-color: var(--brand-color);
-  border: 1px solid var(--brand-color);
-  color: black;
-}
-
-input.center {
-  border: 1px solid var(--contact-border);
-  text-align: center;
-  padding: 5px 40px;
-}
-
-.btn-yellow {
-  padding: 5px 20px;
-  background-color: var(--brand-color);
-  border-color: var(--brand-color);
-  font-weight: 600;
-  font-size: 1rem;
-}
-
-.btn-yellow:hover {
-  background-color: #eece18;
-  border-color: var(--brand-color);
-}
-
-/* search panel end */
 .t-hover span {
   color: black;
   font-weight: 300;
@@ -138,14 +119,20 @@ input.center {
   left: 0;
   z-index: 4;
 }
-
+.c-navbar .navbar-nav .nav-item .nav-link {
+  color: black;
+}
+.c-navbar .navbar-nav .nav-item .nav-link:hover {
+  color: white;
+  background-color: black;
+}
 /* navbar-end */
 
 /* .lattest-product */
-.lattest-product .head {
+/* .lattest-product .head {
   margin-top: 10rem;
   margin-left: 6rem;
-}
+} */
 
 .lattest-product .carousel-indicators button {
   border: 1px solid var(--brand-color);
@@ -155,11 +142,23 @@ input.center {
   width: 0.8rem;
 }
 
-.lattest-product .carousel-control-next-icon,
-.lattest-product .carousel-control-prev-icon {
-  visibility: hidden;
+.lattest-product .carousel .carousel-inner {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.lattest-product .carousel .carousel-inner .carousel-item {
+  background-color: var(--contact-border);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.lattest-product .carousel-inner .carousel-item img {
+  width: 500px;
+}
 /* image btn */
 .btn-img {
   width: 120px;
@@ -201,169 +200,6 @@ input.center {
 .d-custom-btn:hover {
   background-color: black;
   color: #fedc19;
-}
-
-/* navbar start */
-
-#navbar .primary-nav-link {
-  border-bottom: 3px solid #fedc19;
-}
-
-#navbar .primary-nav-link:hover {
-  border-bottom: 2px solid black;
-  transition: all 0.5s ease-in-out;
-}
-
-#navbar .primary-navs {
-  position: relative;
-  top: 100%;
-  left: 0;
-}
-
-#navbar .primary-nav-items:hover .secondary-navs-wrapper {
-  display: block;
-  position: absolute;
-  top: 100%;
-}
-
-#navbar .primary-nav-link {
-  color: black;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-#navbar .secondary-navs-wrapper {
-  display: none;
-  animation-name: slider;
-  animation-duration: 0.8s;
-  animation-direction: alternate-reverse;
-  -webkit-animation-direction: alternate;
-
-  animation-timing-function: ease;
-}
-
-@keyframes slider {
-  from {
-    transform: rotateX(-90deg);
-    transform-origin: left top;
-  }
-
-  to {
-    transform: rotateX(0deg);
-    transform-origin: left top;
-  }
-}
-
-#navbar .secondary-navs {
-  background-color: white;
-  width: 200px;
-  padding: 20px 20px;
-}
-
-#navbar .secondary-nav-item {
-  text-align: start;
-  list-style: none;
-}
-
-#navbar .secondary-nav-link {
-  color: var(--grey);
-  font-size: 16px;
-}
-
-#navbar .secondary-nav-link:hover,
-#navbar .secondary-nav-link:focus {
-  color: var(--brand-color);
-}
-
-#navbar .secondary-horizontal-card {
-  background-color: white;
-  margin: 0 -60px;
-  padding: 20px 0;
-}
-
-#navbar .secondary-horizontal-card1 {
-  background-color: white;
-  margin: 0 -120px;
-  padding: 20px 0;
-}
-
-#navbar .secondary-horizontal-card .list-group-item,
-#navbar .secondary-horizontal-card1 .list-group-item {
-  border: none;
-  text-transform: capitalize;
-  font-size: 14px;
-  color: var(--grey);
-  background-color: transparent;
-}
-
-#navbar .secondary-horizontal-card strong {
-  border: none;
-  text-transform: capitalize;
-  font-size: 15px;
-  color: var(--grey);
-  background-color: transparent;
-}
-
-#navbar .secondary-horizontal-card1 .list-group-item:hover,
-#navbar .secondary-horizontal-card1 .list-group-item:focus {
-  color: var(--brand-color);
-}
-
-#navbar .secondary-horizontal-card .list-group-item:hover,
-#navbar .secondary-horizontal-card .list-group-item:focus {
-  color: var(--brand-color);
-}
-
-#navbar
-/* navbar end */
-
-/* swiper slide */
-
-/* end */
-
-/* switch pegination */
-/* .switch-pegination .product-list {
-    border: 1px solid var(--custom-border);
-    display: inline-block;
-    border-radius: 50px;
-} */
-
-.switch-pegination .product-list span {
-  color: var(--custom-border);
-}
-
-.switch-pegination .product-list a {
-  text-decoration: none;
-  color: black;
-  padding: 0 1rem;
-}
-
-.switch-pegination .product-list a:hover {
-  color: var(--brand-color);
-}
-
-.switch-pegination .pegination {
-  border: 1px solid var(--custom-border);
-  display: inline-block;
-  border-radius: 20px;
-  padding: 1px 10px;
-}
-
-.switch-pegination .pegination a {
-  text-decoration: none;
-  padding: 0 0.3rem;
-  color: var(--grey);
-}
-
-.switch-pegination .pegination a:hover {
-  color: var(--brand-color);
-}
-
-/* switch pegination end */
-.horizontle-line {
-  width: 100%;
-  height: 1px;
-  background-color: rgb(218, 214, 214);
 }
 
 /* section-new-product */
@@ -457,31 +293,28 @@ footer .list-group a:hover {
   display: flex;
 }
 
-/* section-fasilities */
+/* section-fasilities headerline */
+.fasilities {
+  border-top: 2px solid var(--custom-border);
+  padding-top: 30px;
 
-.fasilities .v-line {
-  border-left: 2px solid var(--custom-border);
-  height: 3rem;
-  margin-bottom: 1.5rem;
-  padding-left: 1.5rem;
+  border-bottom: 2px solid var(--custom-border);
+  padding-bottom: 30px;
+}
+.fasilities .items {
+  border-right: 2px solid grey;
   display: flex;
   align-items: center;
 }
-
-.fasilities hr {
-  color: grey;
-}
-
 .fasilities .items .card-body {
   line-height: 1rem;
 }
 
 .fasilities .items img {
   height: 50px;
-  margin-top: 10px;
 }
 
-/* end section .fasilities */
+/* end section .fasilities headerline*/
 
 /* section-contact */
 section.contact .container-fluid {

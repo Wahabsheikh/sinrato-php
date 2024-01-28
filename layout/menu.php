@@ -11,9 +11,9 @@
                 </div>
                 <div class="topbar-right col-12 col-lg-6">
                     <div class=" d-flex justify-content-center justify-content-lg-end ">
-                        <a href="<?php echo BASE_URL; ?>/pages/myaccount.php">My account</a>
+                        <a href="<?php echo BASE_URL; ?>/myaccount.php">My account</a>
                         <span class="mx-3 py-1 grey">|</span>
-                        <a href="<?php echo BASE_URL; ?>/pages/cart.php">Checkout</a>
+                        <a href="<?php echo BASE_URL; ?>/cart.php">Checkout</a>
                     </div>
                 </div>
             </div>
@@ -25,39 +25,15 @@
     <div class="container-fluid">
         <div class="my-container">
             <div class="row  p-4 mt-2 second-topbar d-flex align-content-center  ">
-                <div
-                    class="col-lg-2 col-md-12 align-items-center d-flex  justify-content-md-center justify-content-end">
+                <div class="col-lg-9 align-items-center d-flex  ">
                     <figure>
-                        <img src="<?php echo BASE_URL ?>/assets/images/logo_sinrato (1).png"
-                            style="width: 180px; height: 40px;" alt="logo">
+                        <a href="<?php echo BASE_URL; ?>">
+                            <img src="<?php echo BASE_URL ?>/assets/images/logo_sinrato (1).png"
+                                style="width: 180px; height: 40px;" alt="logo"></a>
                     </figure>
                 </div>
-                <div class="col-lg-7 col-md-12 d-flex justify-content-md-center justify-content-lg-start">
-                    <div class="custom-group-btn btn-group border-0" role="group"
-                        aria-label="Button group with nested dropdown">
-                        <div class="panel btn-group" role="group">
-                            <button id="btnGroupDrop1" type="button" class="left btn  dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                All Categories
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                                <li><a class="dropdown-item" href="#">Dropdown link</a></li>
-                            </ul>
-                        </div> <input type="text" class="center  form-controll" placeholder="Search Products">
-                        <button type="button" class=" btn btn-yellow  ">Search</button>
-                    </div>
-                </div>
-                <div class="col-lg-3  d-flex d-md-none d-lg-block justify-content-end">
-                    <div class="row  d-flex  t-hover">
-                        <div class="col-6 d-flex align-self-center ">
-                            <i class="fa-regular fa-heart fa-2x"></i>
-                            <div class="  mx-2 d-flex flex-column align-items-start">
-                                <span class="badge  bg-custom-yellow  ">0</span>
-                                <p><a class="text-decoration-none " href="" style="  font-size: 13px;"> Wishlist</a>
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-3 d-flex d-md-none d-lg-block">
+                    <div class="row  d-flex  t-hover  justify-content-end">
                         <div class="col-6 d-flex align-self-center ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                                 class="bi bi-cart3 d-flex align-self-start" viewBox="0 0 16 16">
@@ -66,7 +42,7 @@
                             </svg>
                             <div class="mx-2 d-flex flex-column align-items-start">
                                 <span class="badge rounded-pill bg-custom-yellow ">0</span>
-                                <p><a class="text-decoration-none " href="<?php echo BASE_URL; ?>/pages/cart.php"
+                                <p><a class="text-decoration-none " href="<?php echo BASE_URL; ?>/cart.php"
                                         style="  font-size: 13px;"> My Cart</a>
                                 </p>
                             </div>
@@ -78,7 +54,7 @@
     </div>
 </section>
 
-<nav class="c-navbar navbar navbar-expand-lg navbar-light thrd-nav">
+<nav class=" c-navbar navbar navbar-expand-lg navbar-light thrd-nav">
     <div class="container-fluid">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -86,16 +62,13 @@
                     <a class="nav-link active" aria-current="page" href="<?php echo BASE_URL; ?>">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="<?php echo BASE_URL; ?>/pages/shop.php">Shop</a>
+                    <a class="nav-link " aria-current="page" href="<?php echo BASE_URL; ?>/shop.php">Shop</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="<?php echo BASE_URL; ?>/pages/about.php">About</a>
+                    <a class="nav-link" aria-current="page" href="<?php echo BASE_URL; ?>/about.php">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page"
-                        href="<?php echo BASE_URL; ?>/pages/contact.php">Contact</a>
+                    <a class="nav-link " aria-current="page" href="<?php echo BASE_URL; ?>/contact.php">Contact</a>
                 </li>
 
             </ul>

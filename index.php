@@ -1,15 +1,18 @@
-<?php
-include "./data/products.php";
+<?php include "./layout/header.php";
+$data = $products;
+//Filter Category Products
+if (isset($_GET['category_id'])) {
+    $filterproducts = [];
+    $category_id = $_GET['category_id'];
+    foreach ($data as $key => $value) {
+        if ($value['category_id'] == $category_id) {
+
+            array_push($filterproducts, $value);
+        }
+    }
+    $data = $filterproducts;
+}
 ?>
-<?php
-include "./data/ourfasilities.php";
-?>
-<?php
-include "./data/addsimagebanner.php";
-?>
-<?php include "./data/categories.php"; ?>
-<?php include "./data/banner.php"; ?>
-<?php include "./layout/header.php"; ?>
 <style>
     .selector-for-some-widget {
         box-sizing: content-box;
@@ -19,15 +22,12 @@ include "./data/addsimagebanner.php";
 
 <body>
     <?php include "./layout/menu.php"; ?>
-
     <section class="lattest-product">
         <div class="container-fluid">
             <div class="my-container">
                 <div class="row ">
                     <div class="col-12">
-
                         <div class="carousel slide carousel-fade position-sticky" id="demo" data-bs-ride="carousel">
-
                             <div class="carousel-indicators  ">
                                 <button type="button" class="active" data-bs-target="#demo"
                                     data-bs-slide-to="0"></button>
@@ -35,54 +35,57 @@ include "./data/addsimagebanner.php";
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
                                 <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-
-
                             </div>
+                            <div class="carousel-inner bg-secondary">
+                                <div class=" carousel-item  active">
 
-
-                            <div class="carousel-inner">
-
-                                <div class="carousel-item active">
-                                    <img src="./assets/images/slider/3.jpg" alt="" class="d-block w-100">
-                                    <div class="head position-absolute  ">
+                                    <div class="head  ">
                                         <h1>
                                             New Rang Of <br> Samsung Camera
                                         </h1>
                                         <p class="text-muted">Samsung E-4-40 / CX-100></p>
 
-                                        <a href="#" class="btn btn-img ">Shop Now</a>
-                                    </div>
-                                </div>
-                                <?php foreach ($banners as $key => $value) { ?>
+                                        <a href="<?php echo BASE_URL . '/shop.php?category_id=' ?>"
+                                            class="btn btn-img ">Shop Now</a>
 
-                                    <div class="carousel-item ">
-                                        <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt=""
-                                            class="d-block w-100">
-                                        <div class="head position-absolute  ">
+                                    </div>
+                                    <div class="figure">
+                                        <img src="<?php echo BASE_URL ?>/assets/images/products/1.png" alt=""
+                                            class="d-block ">
+                                    </div>
+
+                                </div>
+                                <?php foreach ($categories as $key => $value) { ?>
+
+                                    <div class="carousel-item">
+
+                                        <div class="head">
+
+
                                             <h1>
                                                 New Rang Of <br>
                                                 <?php echo $value['title']; ?>
                                             </h1>
                                             <p class="text-muted">
-                                                <?php echo $value['model']; ?>
+                                                <?php echo $value['description']; ?>
                                             </p>
-                                            <a href="#" class="btn btn-img ">Shop Now</a>
+                                            <a href="<?php echo BASE_URL . '/shop.php?category_id=' . $value['id']; ?>"
+                                                class="
+                                                btn btn-img ">
+                                                Shop Now
+                                            </a>
                                         </div>
+                                        <div class=" figure">
+
+                                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt=""
+                                                class="d-block">
+                                        </div>
+
+
                                     </div>
+
                                 <?php } ?>
                             </div>
-
-
-                            <button type="button" class="carousel-control-prev" data-bs-target="#demo"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon "></span>
-                            </button>
-                            <button type="button" class="carousel-control-next" data-bs-target="#demo"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon "></span>
-                            </button>
-
-
 
                         </div>
 
@@ -91,15 +94,15 @@ include "./data/addsimagebanner.php";
             </div>
         </div>
     </section>
-
     <section class="fasilities">
         <div class="container-fluid">
-            <hr>
-            <div class="row my-5">
+            <div class="row ">
                 <?php foreach ($our_fasilities as $key => $value) { ?>
-                    <div class=" offer  col-3 ms-2 ">
-                        <div class="items d-flex ">
-                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="icon">
+                    <div class="col-3 ">
+                        <div class="items mb-2">
+                            <div class="figure">
+                                <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="icon">
+                            </div>
                             <div class="card-body ">
                                 <h6 class="card-title">
                                     <?php echo $value['title']; ?>
@@ -114,20 +117,16 @@ include "./data/addsimagebanner.php";
                 <?php } ?>
 
             </div>
-            <hr>
         </div>
     </section>
-
-    <section class="F-categories">
-        <div class="container-fluid my-3">
-            <div class="my-container">
-                <div class="row d-flex mb-3">
-                    <div class="col-3 text-center">
-                        <h4>New Project</h4>
-                    </div>
-                    <div class="col-md-9 align-self-center d-flex justify-content-start">
-                        <div class="horizontle-line "></div>
-                    </div>
+    <section class="headers-decoration">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-3 ">
+                    <h2 class="mb-0">New Products</h2>
+                </div>
+                <div class="col-9 ">
+                    <div class="hr"></div>
                 </div>
             </div>
         </div>
@@ -142,32 +141,14 @@ include "./data/addsimagebanner.php";
                                 <div class="card ">
                                     <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="...">
                                     <div class="card-body ">
-                                        <h6 class="card-title"><a href="" class="text-uppercase">
+                                        <h6 class="card-title"><a
+                                                href="<?php echo BASE_URL . '/productdetails.php?id=' . $value['id']; ?>"
+                                                class="text-uppercase">
                                                 <?php echo $value['name']; ?>
                                             </a></h6>
                                         <p class="my-2"><a href="" class="d-block ">
                                                 <?php echo $value['description']; ?>
                                             </a></p>
-                                        <div class="stars-rating">
-                                            <ul class="stars list-unstyled d-flex mt-">
-                                                <li class="star">
-                                                    <i class="fas fa-sm fa-star"></i>
-                                                </li>
-                                                <li class="star">
-                                                    <i class="fas fa-sm fa-star"></i>
-                                                </li>
-                                                <li class="star">
-                                                    <i class="fas fa-sm fa-star"></i>
-                                                </li>
-                                                <li class="star">
-                                                    <i class="fas fa-sm fa-star"></i>
-                                                </li>
-                                                <li class="star me-3">
-                                                    <i class="fas fa-sm fa-star"></i>
-                                                </li>
-                                                <span><a href="">(5 Reviews)</a></span>
-                                            </ul>
-                                        </div>
                                         <span class="h5">
                                             <?php echo $value['price']; ?>
                                         </span>
@@ -180,13 +161,12 @@ include "./data/addsimagebanner.php";
             </div>
         </div>
     </section>
-
     <section class="banner-w">
         <div class="container-fluid mt-5 ">
             <div class="my-container">
-                <div class=" banner row d-flex justify-content-evenly">
+                <div class=" banner row d-flex justify-content-evenly ">
                     <?php foreach ($adds_image_banners as $key => $value) { ?>
-                        <div class="col-md-4 ">
+                        <div class="col-md-3 ">
                             <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="">
                         </div>
                     <?php } ?>
@@ -194,47 +174,49 @@ include "./data/addsimagebanner.php";
             </div>
         </div>
     </section>
-
-    <section class="F-categories">
-        <div class="container-fluid my-3">
-            <div class="my-container">
-                <div class="row d-flex mb-3">
-                    <div class="col-3 text-center">
-                        <h4>Featured Categories</h4>
-                    </div>
-                    <div class="col-md-9 align-self-center d-flex justify-content-start">
-                        <div class="horizontle-line "></div>
-                    </div>
+    <section class="headers-decoration">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-3 ">
+                    <h2 class="mb-0">New Categories</h2>
+                </div>
+                <div class="col-9 ">
+                    <div class="hr"></div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class=" categories-card ">
         <div class="container-fluid">
             <div class="my-container">
                 <div class="row g-3 d-flex justify-content-evenly home-categories ">
-                    <?php foreach ($categories as $key => $value) { ?>
-                        <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6  mb-4">
-                            <div class="py-3 card d-flex flex-row align-self-center ">
-                                <div class="card-body ">
-                                    <h6 class="card-title">
-                                        <?php echo $value['title']; ?>
-                                    </h6>
-                                    <p class="card-text">
-                                        <?php echo $value['description']; ?>
-                                    </p>
-                                    <a href="#">+ Shop Now</a>
-                                </div>
-                                <figure class="figure">
-                                    <div class="single-image-wrapper">
-                                        <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="..."
-                                            alt="product-image" style="width: 100px; height: 100px;">
+                    <?php foreach ($categories as $key => $value) {
+                        if ($value['featured']) {
+                            ?>
+                            <div class=" col-xl-3 col-lg-3 col-md-6 col-sm-6  mb-1">
+                                <div class="py-3 card d-flex flex-row align-self-center ">
+                                    <div class="card-body ">
+                                        <h6 class="card-title fw-bold">
+
+                                            <?php echo $value['title']; ?>
+
+                                        </h6>
+                                        <p class="card-text text-muted">
+                                            <?php echo $value['description']; ?>
+                                        </p>
+                                        <a href="<?php echo BASE_URL . '/shop.php?category_id=' . $value['id']; ?>">+
+                                            Shop Now</a>
                                     </div>
-                                </figure>
+                                    <figure class="figure">
+                                        <div class="single-image-wrapper ">
+                                            <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="..."
+                                                alt="product-image" style="width: 100px; height: 100px;">
+                                        </div>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
-                    <?php } ?>
+                        <?php }
+                    } ?>
                 </div>
             </div>
         </div>

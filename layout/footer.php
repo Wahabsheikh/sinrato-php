@@ -96,11 +96,11 @@
         </div>
     </div>
 </footer>
-<script src="<?php echo BASE_URL . J_QUERY_MIN_JS ?>"></script>
-<script src="<?php echo BASE_URL . O_CAROUSEL_MIN_JS ?>"></script>
-<script src="<?php echo BASE_URL . B_MIN_JS ?>"></script>
+<script src="<?php echo BASE_URL . '/assets/js/jquery.min.js' ?>"></script>
+<script src="<?php echo BASE_URL . '/assets/js/owl.carousel.min.js' ?>"></script>
+<script src="<?php echo BASE_URL . '/assets/jsbs/js/bootstrap.bundle.min.js' ?>"></script>
 <script src="https://kit.fontawesome.com/1d478d290c.js" crossorigin="anonymous"></script>
-<script src="<?php echo BASE_URL . PLUGINS_JS ?>"></script>
+<script src="<?php echo BASE_URL . '/assets/js/plugins.js' ?>"></script>
 
 
 </body>

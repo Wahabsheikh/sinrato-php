@@ -1,9 +1,8 @@
-<?php include "../data/products.php"; ?>
-<?php include "../layout/header.php"; ?>
+<?php include "./layout/header.php"; ?>
 </head>
 
 <body>
-    <?php include "../layout/menu.php"; ?>
+    <?php include "./layout/menu.php"; ?>
     <section class="contact-us">
         <div class="container-fluid">
             <div class="container">
@@ -115,4 +114,4 @@
         </div>
     </section>
     <section id="contact" class="contact"></section>
-    <?php include "../layout/footer.php"; ?>
+    <?php include "./layout/footer.php"; ?>
