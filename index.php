@@ -1,21 +1,26 @@
 <?php include "./layout/header.php";
 $data = $products;
 //Filter Category Products
-if (isset($_GET['category_id'])) {
-    $filterproducts = [];
-    $category_id = $_GET['category_id'];
-    foreach ($data as $key => $value) {
-        if ($value['category_id'] == $category_id) {
+// if (isset($_GET['category_id'])) {
+//     $filterproducts = [];
+//     $category_id = $_GET['category_id'];
+//     foreach ($data as $key => $value) {
+//         if ($value['category_id'] == $category_id) {
 
-            array_push($filterproducts, $value);
-        }
-    }
-    $data = $filterproducts;
-}
+//             array_push($filterproducts, $value);
+//         }
+//     }
+//     $data = $filterproducts;
+// }
 ?>
 <style>
     .selector-for-some-widget {
         box-sizing: content-box;
+    }
+
+    .fasilities .owl-dots,
+    .fasilities .owl-nav {
+        display: none;
     }
 </style>
 </head>
@@ -96,26 +101,28 @@ if (isset($_GET['category_id'])) {
     </section>
     <section class="fasilities">
         <div class="container-fluid">
-            <div class="row ">
-                <?php foreach ($our_fasilities as $key => $value) { ?>
-                    <div class="col-3 ">
-                        <div class="items mb-2">
-                            <div class="figure">
-                                <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="icon">
-                            </div>
-                            <div class="card-body ">
-                                <h6 class="card-title">
-                                    <?php echo $value['title']; ?>
-                                </h6>
-                                <span class="card-text"> <small class="muted">
-                                        <?php echo $value['discription']; ?>
-                                    </small>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                <?php } ?>
 
+            <div class="row ">
+                <div class="col-12 ">
+                    <div class="owl-carousel ">
+                        <?php foreach ($our_fasilities as $key => $value) { ?>
+                            <div class=" items mb-2">
+                                <div class="figure">
+                                    <img src="<?php echo BASE_URL . '/' . $value['image']; ?>" alt="icon">
+                                </div>
+                                <div class="card-body ">
+                                    <h6 class="card-title">
+                                        <?php echo $value['title']; ?>
+                                    </h6>
+                                    <span class="card-text"> <small class="muted">
+                                            <?php echo $value['discription']; ?>
+                                        </small>
+                                    </span>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

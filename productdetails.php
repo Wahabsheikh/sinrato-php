@@ -64,45 +64,11 @@ if (isset($product['category_id'])) {
                                 <?php echo $product['name']; ?>
                             </div>
                         </div>
-                        <!-- <div class="col-lg-2 col-xl-2">
-                            <nav aria-label="product-navigation d-inline">
-                                <ul class="pagination ">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">&lt;</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#" aria-label="Next">
-                                            <span aria-hidden="true"> &gt;</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div> -->
+
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <!-- <div class="stars-rating">
-                                <ul class="stars list-unstyled d-flex mt-">
-                                    <li class="star">
-                                        <i class="fas fa-sm fa-star"></i>
-                                    </li>
-                                    <li class="star">
-                                        <i class="fas fa-sm fa-star"></i>
-                                    </li>
-                                    <li class="star">
-                                        <i class="fas fa-sm fa-star"></i>
-                                    </li>
-                                    <li class="star">
-                                        <i class="fas fa-sm fa-star"></i>
-                                    </li>
-                                    <li class="star me-3">
-                                        <i class="fas fa-sm fa-star"></i>
-                                    </li>
-                                    <span class="customer-reviews"><a href="">(1 customer Reviews)</a></span>
-                                </ul>
-                            </div> -->
+
                             <span class="h5 goods-price">$
                                 <?php echo $product['price']; ?>
                             </span>
@@ -110,13 +76,10 @@ if (isset($product['category_id'])) {
                                 <?php echo $product['description']; ?>
                             </p>
                             <div class="qty-btn-control">
-                                <input type="number" name="quantity" id="">
-                                <button class="btn btn-primary" type="submit">add to cart</button>
+                                <input type="number" name="quantity" value="number" id="">
+                                <button href="#" class="btn btn-primary" type="submit">add to cart</button>
                             </div>
-                            <!-- <div class="add-fav">
-                                <a href="" class="heart">Add to Wishlist</a>
-                                <a href="" class="compare"> Compare</a>
-                            </div> -->
+
                             <hr>
                             <div class="categories-product">
                                 <?php if ($category != null) { ?>
@@ -124,11 +87,7 @@ if (isset($product['category_id'])) {
                                             <?php echo $category['title'] ?>
                                         </a></span><br>
                                 <?php } ?>
-
-
-                                <!-- <span>TAGS:<a href="">blouse</a>,<a href="">fashion</a></span> -->
                             </div>
-
                             <hr>
                             <div class="product-shere d-flex">
                                 <h3 class="product-header">shere this product:</h3>
