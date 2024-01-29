@@ -5,7 +5,11 @@ $buttons = [
         'button' => '',
         'name' => "home",
         'navbar' => true,
-        'information' => true
+        'information' => true,
+        'checkout' => false,
+        'cart' => false,
+        'myaccount' => false
+
 
     ],
     [
@@ -13,31 +17,40 @@ $buttons = [
         'button' => '/shop.php',
         'name' => "shop",
         'navbar' => true,
-        'information' => true
-
+        'information' => true,
+        'checkout' => false,
+        'cart' => false,
+        'myaccount' => false
     ],
     [
         'id' => 3,
         'button' => '/about.php',
         'name' => "about",
         'navbar' => true,
-        'information' => true
-
+        'information' => true,
+        'checkout' => false,
+        'cart' => false,
+        'myaccount' => false
     ],
     [
         'id' => 4,
         'button' => '/contact.php',
         'name' => "contact",
         'navbar' => true,
-        'information' => true
-
+        'information' => true,
+        'checkout' => false,
+        'cart' => false,
+        'myaccount' => false
     ],
     [
         'id' => 5,
         'button' => '/checkout.php',
         'name' => "checkout",
         'navbar' => false,
-        'information' => true
+        'information' => true,
+        'checkout' => true,
+        'cart' => false,
+        'myaccount' => false
 
     ],
     [
@@ -45,7 +58,10 @@ $buttons = [
         'button' => '/cart.php',
         'name' => "cart",
         'navbar' => false,
-        'information' => true
+        'information' => true,
+        'checkout' => false,
+        'cart' => true,
+        'myaccount' => false
 
     ],
     [
@@ -54,8 +70,8 @@ $buttons = [
         'name' => "my account",
         'navbar' => false,
         'information' => false,
-        'admin' => true
-
+        'myaccount' => true,
+        'checkout' => false,
+        'cart' => false
     ]
 ];
-?>

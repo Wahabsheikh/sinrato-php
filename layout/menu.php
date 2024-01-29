@@ -11,9 +11,31 @@
                 </div>
                 <div class="topbar-right col-12 col-lg-6">
                     <div class=" d-flex justify-content-center justify-content-lg-end ">
-                        <a href="<?php echo BASE_URL; ?>/myaccount.php">My account</a>
-                        <span class="mx-3 py-1 grey">|</span>
-                        <a href="<?php echo BASE_URL; ?>/cart.php">Checkout</a>
+                        <?php foreach ($buttons as $key => $value) {
+                            if ($value['checkout']) {
+                                ?>
+                                <a href="<?php echo BASE_URL . '/' . $value['button']; ?>">
+                                    <?php echo $value['name']; ?>
+                                </a>
+                                <span class="mx-3 py-1 grey">|</span>
+
+
+                            <?php }
+                            if ($value['cart']) {
+                                ?>
+                                <a href="<?php echo BASE_URL . '/' . $value['button']; ?>">
+                                    <?php echo $value['name']; ?>
+                                </a>
+                                <span class="mx-3 py-1 grey">|</span>
+                            <?php }
+                            if ($value['myaccount']) {
+                                ?>
+                                <a href="<?php echo BASE_URL . '/' . $value['button']; ?>">
+                                    <?php echo $value['name']; ?>
+                                </a>
+                            <?php }
+
+                        } ?>
                     </div>
                 </div>
             </div>
